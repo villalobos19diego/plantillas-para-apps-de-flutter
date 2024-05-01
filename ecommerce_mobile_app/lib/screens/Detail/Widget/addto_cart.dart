@@ -81,11 +81,11 @@ class _AddToCartState extends State<AddToCart> {
                 provider.toggleFavorite(widget.product);
                 const snackBar = SnackBar(
                   content: Text(
-                    "Successfully added!",
+                    "Se agrego exitosamente !",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 25,
-                      color: Colors.white,
+                      color: Colors.green,
                     ),
                   ),
                   duration: Duration(seconds: 1),
@@ -101,7 +101,7 @@ class _AddToCartState extends State<AddToCart> {
                 alignment: Alignment.center,
                 padding: const EdgeInsets.symmetric(horizontal: 50),
                 child: const Text(
-                  "Add to Cart",
+                  "Agregar al carrito",
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,

@@ -10,10 +10,12 @@ class Product {
   final List<Color> colors;
   final String category;
   final double rate;
+  int views;
   int quantity;
 
   Product(
-      {required this.title,
+      { this.views = 0,
+        required this.title,
       required this.review,
       required this.description,
       required this.image,
@@ -42,6 +44,7 @@ final List<Product> all = [
     review: "(320 Reviews)",
     rate: 4.8,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "Woman Sweter",
@@ -59,6 +62,7 @@ final List<Product> all = [
     review: "(32 Reviews)",
     rate: 4.5,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "Smart Watch",
@@ -76,6 +80,7 @@ final List<Product> all = [
     review: "(20 Reviews)",
     rate: 4.0,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "Mens Jacket",
@@ -93,6 +98,7 @@ final List<Product> all = [
     review: "(20 Reviews)",
     rate: 5.0,
     quantity: 1,
+    views: 0,
   ),
    Product(
     title: "Watch",
@@ -110,6 +116,7 @@ final List<Product> all = [
     review: "(100 Reviews)",
     rate: 5.0,
     quantity: 1,
+     views: 0,
   ),
    Product(
     title: "Air Jordan",
@@ -127,6 +134,7 @@ final List<Product> all = [
     review: "(55 Reviews)",
     rate: 5.0,
     quantity: 1,
+     views: 0,
   ),
   Product(
     title: "Super Perfume",
@@ -144,6 +152,7 @@ final List<Product> all = [
     review: "(99 Reviews)",
     rate: 4.7,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "Wedding Ring",
@@ -161,6 +170,7 @@ final List<Product> all = [
     review: "(80 Reviews)",
     rate: 4.5,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "  Pants",
@@ -178,6 +188,7 @@ final List<Product> all = [
     review: "(55 Reviews)",
     rate: 5.0,
     quantity: 1,
+    views: 0,
   ),
 ];
 
@@ -198,6 +209,7 @@ final List<Product> shoes = [
     review: "(55 Reviews)",
     rate: 5.0,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "Vans Old Skool",
@@ -215,6 +227,7 @@ final List<Product> shoes = [
     review: "(200 Reviews)",
     rate: 5.0,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "Women-Shoes",
@@ -232,6 +245,7 @@ final List<Product> shoes = [
     review: "(100 Reviews)",
     rate: 4.8,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "Sports Shoes",
@@ -244,11 +258,13 @@ final List<Product> shoes = [
       Colors.deepPurpleAccent,
       Colors.orange,
       Colors.green,
+
     ],
     category: "Shoes",
     review: "(60 Reviews)",
     rate: 3.0,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "White Sneaker",
@@ -266,6 +282,7 @@ final List<Product> shoes = [
     review: "(00 Reviews)",
     rate: 0.0,
     quantity: 1,
+    views: 0,
   ),
   
 ];
@@ -288,6 +305,7 @@ final List<Product> beauty = [
     review: "(200 Reviews)",
     rate: 4.0,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "Super Perfume",
@@ -305,6 +323,7 @@ final List<Product> beauty = [
     review: "(99 Reviews)",
     rate: 4.7,
     quantity: 1,
+    views: 0,
   ),
    Product(
     title: "Skin-Care Product",
@@ -322,6 +341,7 @@ final List<Product> beauty = [
     review: "(20 Reviews)",
     rate: 4.2,
     quantity: 1,
+     views: 0,
   ),
 ];
 
@@ -343,6 +363,7 @@ final List<Product> womenFashion = [
     review: "(25 Reviews)",
     rate: 5.0,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "Mens Jacket",
@@ -360,6 +381,7 @@ final List<Product> womenFashion = [
     review: "(100 Reviews)",
     rate: 4.0,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "T-Shert",
@@ -377,6 +399,7 @@ final List<Product> womenFashion = [
     review: "(20 Reviews)",
     rate: 5.0,
     quantity: 1,
+    views: 0,
   ),
   Product(
     title: "  Pants",
@@ -394,6 +417,7 @@ final List<Product> womenFashion = [
     review: "(55 Reviews)",
     rate: 5.0,
     quantity: 1,
+    views: 0,
   ),
 ];
 final List<Product> jewelry = [
@@ -414,6 +438,7 @@ Product(
     review: "(320 Reviews)",
     rate: 4.5,
     quantity: 1,
+  views: 0,
   ),
   Product(
     title: "Jewelry-Box",
@@ -431,6 +456,7 @@ Product(
     review: "(100 Reviews)",
     rate: 5.0,
     quantity: 1,
+    views: 0,
   ),
    Product(
     title: "Wedding Ring",
@@ -448,6 +474,7 @@ Product(
     review: "(80 Reviews)",
     rate: 4.5,
     quantity: 1,
+     views: 0,
   ),
    Product(
     title: "Necklace-Jewellery",
@@ -465,6 +492,7 @@ Product(
     review: "(22 Reviews)",
     rate: 3.5,
     quantity: 1,
+     views: 0,
   ),
 ];
 final List<Product> menFashion = [
@@ -485,6 +513,7 @@ final List<Product> menFashion = [
     review: "(90 Reviews)",
     rate: 5.0,
     quantity: 1,
+    views: 0,
   ),
    Product(
     title: "Men Pants",
@@ -502,6 +531,7 @@ final List<Product> menFashion = [
     review: "(500 Reviews)",
     rate: 4.5,
     quantity: 1,
+     views: 0,
   ),
   Product(
     title: "Men Shert",
@@ -519,6 +549,7 @@ final List<Product> menFashion = [
     review: "(200 Reviews)",
     rate: 3.0,
     quantity: 1,
+    views: 0,
   ),
    Product(
     title: "T-Shirt",
@@ -536,6 +567,7 @@ final List<Product> menFashion = [
     review: "(1k Reviews)",
     rate: 5.0,
     quantity: 1,
+     views: 0,
   ),
    Product(
     title: "Watch",
@@ -553,6 +585,7 @@ final List<Product> menFashion = [
     review: "(100 Reviews)",
     rate: 5.0,
     quantity: 1,
+     views: 0,
   ),
 
 ];

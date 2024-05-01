@@ -3,8 +3,10 @@ import 'package:provider/provider.dart';
 import '../models/product_model.dart';
 
 class CartProvider extends ChangeNotifier {
+
   final List<Product> _cart = [];
   List<Product> get cart => _cart;
+
   void toggleFavorite(Product product) {
     if (_cart.contains(product)) {
       for (Product element in _cart) {
@@ -46,4 +48,7 @@ class CartProvider extends ChangeNotifier {
       listen: listen,
     );
   }
+
+
+
 }

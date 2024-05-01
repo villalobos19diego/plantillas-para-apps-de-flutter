@@ -10,19 +10,19 @@ class Category {
 
 final List<Category> categoriesList = [
   Category(
-    title: "All",
+    title: "Todos",
     image: "images/all.png",
   ),
   Category(
-    title: "Shoes",
+    title: "Zapatos",
     image: "images/shoes.png",
   ),
   Category(
-    title: "Beauty",
+    title: "Belleza",
     image: "images/beauty.png",
   ),
   Category(
-    title: "Women's\nFashion",
+    title: "Mujeres\nModa",
     image: "images/image1.png",
   ),
   Category(
@@ -30,7 +30,7 @@ final List<Category> categoriesList = [
     image: "images/jewelry.png",
   ),
   Category(
-    title: "Men's\nFashion",
+    title: "Hombres\nModa",
     image: "images/men.png",
   ),
 ];

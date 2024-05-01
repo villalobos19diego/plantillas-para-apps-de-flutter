@@ -1,5 +1,6 @@
 import 'package:ecommerce_mobile_app/models/product_model.dart';
 import 'package:flutter/material.dart';
+import 'package:share_plus/share_plus.dart';
 
 import '../../../Provider/favorite_provider.dart';
 
@@ -30,7 +31,9 @@ class DetailAppBar extends StatelessWidget {
               backgroundColor: Colors.white,
               padding: const EdgeInsets.all(15),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Share.share("com.example.share_app");
+            },
             icon: const Icon(Icons.share_outlined),
           ),
           const SizedBox(width: 10),
@@ -45,7 +48,7 @@ class DetailAppBar extends StatelessWidget {
             icon:  Icon(
               provider.isExist(product) ?
               Icons.favorite :Icons.favorite_border,
-              color: Colors.black,size: 25,
+              color: Colors.red,size: 25,
               ),
           ),
         ],

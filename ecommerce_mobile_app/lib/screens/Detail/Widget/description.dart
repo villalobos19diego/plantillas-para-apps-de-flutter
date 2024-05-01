@@ -1,12 +1,14 @@
 import 'package:ecommerce_mobile_app/constants.dart';
 import 'package:flutter/material.dart';
 
+
 class Description extends StatelessWidget {
   final String description;
   const Description({super.key, required this.description});
 
   @override
   Widget build(BuildContext context) {
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -22,7 +24,7 @@ class Description extends StatelessWidget {
               ),
               alignment: Alignment.center,
               child: const Text(
-                "Description",
+                "Descripcion",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
@@ -30,14 +32,14 @@ class Description extends StatelessWidget {
               ),
             ),
             const Text(
-              "Specifications",
+              "Detalles",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                   fontSize: 16),
             ),
             const Text(
-              "Reviews",
+              "Vistas",
               style: TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

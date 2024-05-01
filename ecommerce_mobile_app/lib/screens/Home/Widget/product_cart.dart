@@ -105,7 +105,7 @@ class ProductCard extends StatelessWidget {
                   provider.isExist(product)
                       ? Icons.favorite
                       : Icons.favorite_border,
-                  color: Colors.white,
+                  color: Colors.red,
                   size: 22,
                 ),
               ),
